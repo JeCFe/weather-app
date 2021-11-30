@@ -54,7 +54,7 @@ function ScreenUpdate(base) {
             const value = data.dt;
             const fahrenheit = (temp * 9) / 5 + 32;
             const KPHSpeed = speed * 3.6;
-            const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+            const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
             // Converting Epoch(Unix) time to GMT
             const sunriseGMT = new Date(sunrise * 1000);
             const sunsetGMT = new Date(sunset * 1000);
