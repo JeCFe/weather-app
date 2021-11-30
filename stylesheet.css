@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Lora', serif;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: red;
+    background: radial-gradient(
+            circle,
+            rgba(249, 163, 203, 0.6334908963585435) 0%,
+            rgba(252, 188, 215, 0.8407738095238095) 35%,
+            rgba(249, 163, 203, 1) 100%
+    );
+
+}
+.weather {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top:10px;
+}
+.wind {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#location {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.desc {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.circle {
+    background-color: black;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    margin: 0 15px;
+}
+.top-banner {
+    color: black;
+}
+
+
+
+.top-banner form {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.top-banner form input {
+    background-color: transparent;
+    font-family:'Lora', serif;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 150px;
+    padding: 5px 5px 10px;
+    border-radius: 10px;
+}
+
+.top-banner form input::placeholder {
+    color: currentColor;
+}
+
+.top-banner form button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: transparent;
+    transition: background 0.1s ease-in-out;
+}
+
+.top-banner form button:hover {
+    background: rgba(249, 163, 203, 1);
+}
+
