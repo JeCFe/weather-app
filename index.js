@@ -1,5 +1,4 @@
 const api = 'eaf2517a4d67d9a320b66318638667e5';
-
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
 const tempC = document.querySelector('.c');
@@ -49,7 +48,7 @@ function ScreenUpdate(base) {
             const place = data.name;
             const {country} = data.sys;
             const {description, icon} = data.weather[0];
-            const {lat, lon} = data.coord;
+
             const{speed, deg} = data.wind;
             const {sunrise, sunset} = data.sys;
             const value = data.dt;
