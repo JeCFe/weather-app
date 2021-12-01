@@ -6,22 +6,60 @@
 
 body{
     font-family:'Lora', serif;
+    background-image:url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left center;
+    background-size: cover;
+
 }
-.container {
-    height: 100vh;
-    width: 100vw;
+.text-box{
+    background-color:rgba(51,51,51,0.6);
+    width:100%;
+    margin-top:50px;
+    padding: 5px 20px 20px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color:#F57D7F;
+    border-opacity: .4;
+}
+.mainHead{
+    font-family:'Lora', serif;
+    background-color: rgba(51,51,51,0.4);
+    padding:15px;
+    text-align:center;
+}
+.weatherContent{
+    color:white;
+    height: 800px;
+    width:800px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto auto;
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color:#F57D7F;
+    background-color: rgba(51,51,51,0.4);
     display: flex;
+    position: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: red;
-    background: radial-gradient(
-            circle,
-            rgba(249, 163, 203, 0.6334908963585435) 0%,
-            rgba(252, 188, 215, 0.8407738095238095) 35%,
-            rgba(249, 163, 203, 1) 100%
-    );
 
+}
+
+h2{
+    font-size:40px;
+    color:white;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .weather {
     display: flex;
@@ -58,33 +96,38 @@ body{
 
 
 .top-banner form {
-
+    padding-top: 10px;
     position: relative;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .top-banner form input {
-    background-color: transparent;
+    background-color: white;
     font-family:'Lora', serif;
     font-size: 0.9rem;
     height: 40px;
     width: 150px;
     padding: 5px 5px 10px;
     border-radius: 10px;
+    color:black;
 }
 
 .top-banner form input::placeholder {
-    color: currentColor;
+    color: black;
 }
 
 .top-banner form button {
+    font-family:'Lora', serif;
     font-size: 1rem;
     font-weight: bold;
     padding: 8px 12px;
     margin-left: 15px;
     border-radius: 5px;
-    background: transparent;
+    color: black;
+    background: white;
+    text-decoration: none;
     transition: background 0.1s ease-in-out;
 }
 
@@ -92,3 +135,12 @@ body{
     background: rgba(249, 163, 203, 1);
 }
 
+
+
+#wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top:40px;
+
+
+}
